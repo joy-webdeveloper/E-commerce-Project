@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="this is an e-commerce project for making joy express">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>My First Demo E-commerce Project | Coder Joy</title>
+   
+   <!------font awesome cdn-------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+   
+<!-------------css style link--------------->
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <!-----------navbar starts hare----------->
+   <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav_upper">
+        <li class="nav_list active">
+          <a class="nav_link" href="index.html">Home</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="register.html">Register</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="login.html">Login</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="index.html">Logout</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="profile.html">
+            <img 
+            class="profile_icon"
+            src="1000004142-removebg-preview.png" alt="profile icon">
+          </a>
+        </li>
+      </ul>
+      <ul class="nav_lower">
+        <li class="nav_list">
+          <a class="nav_link nav_brand" href="index.html">Joy Express</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="cart.html">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span>Cart 2 Products - $124.40</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  <!-------------navbar end hare------------>
+   <main>
+     <section class="register">
+       <h2 class="register-title section_center">User Registration</h2>
+       <div class="section_card card">
+         <form action="#" method="post">
+           <div class="from-control flex_center">
+             <label for="name">Name</label>
+             <input type="text" id="name" name="name" placeholder="Your User Name" required autocomplete="name">
+           </div>
+           <div class="from-control flex_center">
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" placeholder="Your Email Address" autocomplete="email" required>
+           </div>
+           <div class="from-control flex_center">
+             <label for="password">Password</label>
+             <input type="password" id="password" name="password" placeholder="Your Password" autocomplete="password" required>
+           </div>
+           <div class="from-control flex_center">
+             <label for="about">About Me</label>
+             <textarea id="about" name="about" placeholder="Writing Message"></textarea>
+           </div>
+           <div class="from-control flex_center from-btn_felid">
+             <button type="submit" class="btn contact-btn">Submit</button>
+           </div>
+         </form>
+       </div>
+     </section>
+     
+   </main>
+   
+  <!-------------footer starts hare------------>
+    <footer class="footer">
+      <div class="flex_around">
+        <label for="subscribe">Subscribe to News Letter</label>
+      <div class="wrapper">
+        <input class="footer_input" type="email" id="subscribe" name="subscribe" placeholder="" required><label class="floating_label">Your Email Address</label>
+        <span class="input_icon"><i class="fa-solid fa-envelope"></i></span>
+       </div>
+        <button class="btn btn_subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; 2026 Joy Express. All Rights Reverse</p>
+      </div>
+     <div class="social_wrapper">
+      <div class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Facebook</span>
+        </a>
+      </div>
+      <div class="social">
+      <i class="fa-brands fa-youtube"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Youtube</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-github"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Github</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-twitter"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Twitter</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-------------footer end hare------------>
+  <script src="script.js" defer></script>
+ </body>
+</html>

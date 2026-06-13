@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="this is an e-commerce project for making joy express">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>My First Demo E-commerce Project | Coder Joy</title>
+   
+   <!------font awesome cdn-------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+   
+<!-------------css style link--------------->
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <!-----------navbar starts hare----------->
+   <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav_upper">
+        <li class="nav_list active">
+          <a class="nav_link" href="index.html">Home</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="register.html">Register</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="login.html">Login</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="index.html">Logout</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="profile.html">
+            <img 
+            class="profile_icon"
+            src="1000004142-removebg-preview.png" alt="profile icon">
+          </a>
+        </li>
+      </ul>
+      <ul class="nav_lower">
+        <li class="nav_list">
+          <a class="nav_link nav_brand" href="index.html">Joy Express</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="cart.html">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span>Cart 2 Products - $124.40</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  <!-------------navbar end hare------------>
+    <!-------------header starts hare------------>
+   <header class="header">
+     <!--
+     <div>
+       <marquee behavior="" direction=""></marquee>
+     </div>
+     -->
+     <div class="scrolling-text flex-space-around">
+       <span>50% Seles Going On..?</span>
+       <div class="features flex-space-around">
+         <article class="feature">
+           <i class="fa-solid fa-truck feature_icon"></i>
+           <h3>Shipping Within 7 Days</h3>
+         </article>
+          <article class="feature">
+           <i class="fa-brands fa-rocketchat feature_icon"></i>
+           <h3>Support 24/7</h3>
+         </article>
+         <article class="feature">
+           <i class="fa-regular fa-credit-card feature_icon"></i>
+           <h3>Safe Payment</h3>
+         </article>
+       </div>
+      </div>
+   </header>
+   <!-------------header end hare------------>
+   
+  <!-------------main starts hare------------>
+    <main>
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 class="section_title">Categories</h3>
+          <div class="divider ltr"></div>
+          <ul class="list">
+            <li class="list_item">
+              <label for="phone">
+                <input type="checkbox" name="phone" id="phone" value="phone">
+                <span>Phone</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="tablets">
+                <input type="checkbox" name="tablets" id="tablets" value="tablets">
+                <span>Tablets</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="televisions">
+                <input type="checkbox" name="televisions" id="televisions" value="televisions">
+                <span>Televisions</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="computer">
+                <input type="checkbox" name="computer" id="computer" value="computer">
+                <span>Computer</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="headphones">
+                <input type="checkbox" name="headphones" id="headphones" value="Headphones">
+                <span>Headphones</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        
+       <section class="price-section">
+         <h3 class="section_title">Price Range</h3>
+         <div class="divider ltr"></div>
+          <ul class="list">
+            <li class="list_item">
+              <label for="price1">
+                <input type="radio" name="price" id="price1" value="[0,20]">
+                <span>$0-$20</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price2">
+                <input type="radio" name="price" id="price2" value="[50,100]">
+                <span>$50-$100</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price3">
+                <input type="radio" name="price" id="price3" value="[120,180]">
+                <span>$120-$180</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price4">
+                <input type="radio" name="price" id="price4" value="[200,250]">
+                <span>$200-$250</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="price5">
+                <input type="radio" name="price" id="price5" value="[300,500+]">
+                <span>$300-$500+</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        
+        <section class="shipping-section">
+         <h3 class="section_title">Shipping Option</h3>
+         <div class="divider ltr"></div>
+          <ul class="list">
+            <li class="list_item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" value="free-shipping">
+                <span>Free Shipping</span>
+              </label>
+            </li>
+            <li class="list_item">
+              <label for="paid">
+                <input type="radio" name="shipping" id="paid" value="paid-shipping">
+                <span>Paid Shipping</span>
+              </label>
+            </li>
+          </ul>
+        </section>
+        
+      </div> 
+    <div class="main-content">
+      <section class="actions flex-space-around">
+        <div class="actions_sort">
+          <label for="sort">Sort By:</label>
+         <select name="sort" id="sort">
+          <option value="sold">Most Sold First</option>
+          <option value="rating">Most Rated First</option>
+          <option value="price">Cheapest First</option>
+          <option value="arrival">Newest First</option>
+          <option value="discount">Biggest Discount First</option>
+         </select>
+       </div>
+       <div class="actions_search">
+         <input type="text" placeholder="Search Product">
+         <button class="btn-search">
+           <span><i class="fa-solid fa-magnifying-glass"></i></span>
+         </button>
+        </div>
+      </section>
+      <!-----Product section starts hare------->
+       <section class="products">
+        <article class="product_item">
+           <div class="badge">
+             <span>5 in stock</span>
+             <div class="divider rtl"></div>
+             <span>3 sold</span>
+             </div>
+             <img src="images (20).jpeg" alt="product1">
+            <div class="product_body">
+              <h3 class="product_name">Sony Version-4 <span class="clored">Phonetool</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-sony" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$225.00</h4>
+            <p class="product_rating">
+              <span>4.5/5</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>2 in stock</span>
+             <div class="divider rtl"></div>
+             <span>9 sold</span>
+             </div>
+             <img src="big_368494.png" alt="product2">
+            <div class="product_body">
+              <h3 class="product_name">Apple Version-4.5 <span class="clored">Phonestand</span></h3>
+             <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-apple-stand" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$325.00</h4>
+            <p class="product_rating">
+              <span>5.6/8</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>10 in stock</span>
+             <div class="divider rtl"></div>
+             <span>5 sold</span>
+             </div>
+             <img src="images (2).jpeg" alt="product3">
+            <div class="product_body">
+              <h3 class="product_name">Lava Version-4.4 <span class="clored">Headphone</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-lava" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$150.99</h4>
+            <p class="product_rating">
+              <span>5.4/2</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>15 in stock</span>
+             <div class="divider rtl"></div>
+             <span>10 sold</span>
+             </div>
+             <img src="istockphoto-173906029-612x612.jpg" alt="product4">
+            <div class="product_body">
+              <h3 class="product_name">Samsung Version-5.5 <span class="clored">Digital Camera</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-samsung-camera" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$889.99</h4>
+            <p class="product_rating">
+              <span>5.5/5</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>20 in stock</span>
+             <div class="divider rtl"></div>
+             <span>12 sold</span>
+             </div>
+             <img src="e356d528-bf4b-4168-ac09-42ded6a8a445.jpg" alt="product5">
+            <div class="product_body">
+              <h3 class="product_name">Apple Version-5.6 <span class="clored">Smart Watch</span></h3>
+              <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-apple-watch" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$500.99</h4>
+            <p class="product_rating">
+              <span>4.8/5</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>30 in stock</span>
+             <div class="divider rtl"></div>
+             <span>15 sold</span>
+             </div>
+             <img src="2066327_MzAwLTMwMC0xM2MzZjBiMjc4.webp" alt="product6">
+            <div class="product_body">
+              <h3 class="product_name">NeePho Version-4.4 <span class="clored">Stand</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-neepho-stand" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$700.99</h4>
+            <p class="product_rating">
+              <span>3.4/5</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <!----6 item after---->
+        <article class="product_item">
+           <div class="badge">
+             <span>45 in stock</span>
+             <div class="divider rtl"></div>
+             <span>30 sold</span>
+             </div>
+             <img src="images (27).jpeg" alt="product7">
+            <div class="product_body">
+              <h3 class="product_name">Apple Version-10.10 <span class="clored">I Phone 17pro Max</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-iphone" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$1500.00</h4>
+            <p class="product_rating">
+              <span>5.5/5</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>45 in stock</span>
+             <div class="divider rtl"></div>
+             <span>12 sold</span>
+             </div>
+             <img src="images (28).jpeg" alt="product8">
+            <div class="product_body">
+              <h3 class="product_name">Vivo Version-4.4 <span class="clored">Potecttor Cover</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-vivo-cover" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$8.00</h4>
+            <p class="product_rating">
+              <span>3.3/2</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>5 in stock</span>
+             <div class="divider rtl"></div>
+             <span>1 sold</span>
+             </div>
+             <img src="images (30).jpeg" alt="product9">
+            <div class="product_body">
+              <h3 class="product_name">Yehama Version-8.8 <span class="clored">Iron5 Yehama</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-yamaha" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$5000.99</h4>
+            <p class="product_rating">
+              <span>10.10/1</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>unlimited in stock</span>
+             <div class="divider rtl"></div>
+             <span>Running sold</span>
+             </div>
+             <img src="roasted-chicken-dinner-platter-delicious-feast_632498-25445.jpg" alt="product10">
+            <div class="product_body">
+              <h3 class="product_name">FreshFood <span class="clored">In Order Food</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-food" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$3-100+ In Oder</h4>
+            <p class="product_rating">
+              <span>Clain Food</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>30 in stock</span>
+             <div class="divider rtl"></div>
+             <span>8 sold</span>
+             </div>
+             <img src="images (29).jpeg" alt="product11">
+            <div class="product_body">
+              <h3 class="product_name">Made In China <span class="clored">Smart Bug</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-smart-bug" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$180.99</h4>
+            <p class="product_rating">
+              <span>2.4/1</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+        
+        <article class="product_item">
+           <div class="badge">
+             <span>unlimited in stock</span>
+             <div class="divider rtl"></div>
+             <span>Running sold</span>
+             </div>
+             <img src="images (4).jpeg" alt="product12">
+            <div class="product_body">
+              <h3 class="product_name">Oppo Version-2.5 <span class="clored">Smart Headphone</span></h3>
+            <p>
+              <span class="dot primary_clr"></span>
+              <span class="dot primary_line"></span>
+              <span class="dot accent_clr"></span>
+            </p>
+            <p class="product_description">
+              Our product features premium, long-lasting materials ensuring maximum durability...
+              <a href="product.html#details-oppo" class="learn_more">
+               <span>Learn More</span>
+              </a>
+            </p>
+            <h4 class="product_price">$4.99</h4>
+            <p class="product_rating">
+              <span>2.2/2</span>
+              <i class="fa-solid fa-ranking-star"></i>
+            </p>
+            <button class="btn product_btn">Add to Cart</button>
+          </div>
+        </article>
+     </section>
+      <div class="pagination">
+        <button class="pagination_btn">
+          <i class="fas fa-less-than"></i>
+        </button>
+        <button class="pagination_btn">2</button>
+        <button class="pagination_btn">3</button>
+        <button class="pagination_btn">4</button>
+        <button class="pagination_btn">5</button>
+        <button class="pagination_btn">6</button>
+        <button class="pagination_btn">7</button>
+        <button class="pagination_btn">8</button>
+        <button class="pagination_btn">9</button>
+        <button class="pagination_btn">10</button>
+        <button class="pagination_btn">...</button>
+        <button class="pagination_btn">50</button>
+        <button class="pagination_btn">
+          <i class="fas fa-greater-than"></i>
+        </button>
+      </div>
+  <!-----Product section ends hare------->
+      
+    </div>
+ </main>
+  <!-------------main ends hare--------------->
+  
+ <!-------------footer starts hare------------>
+    <footer class="footer">
+      <div class="flex_around">
+        <label for="subscribe">Subscribe to News Letter</label>
+      <div class="wrapper">
+        <input class="footer_input" type="email" id="subscribe" name="subscribe" placeholder="" required><label class="floating_label">Your Email Address</label>
+        <span class="input_icon"><i class="fa-solid fa-envelope"></i></span>
+       </div>
+        <button class="btn">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; 2026 Joy Express. All Rights Reserved</p>
+      </div>
+     <div class="social_wrapper">
+      <div class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Facebook</span>
+        </a>
+      </div>
+      <div class="social">
+      <i class="fa-brands fa-youtube"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Youtube</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-github"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Github</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-twitter"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Twitter</span>
+        </a>
+      </div>
+    </div>
+    </footer>
+  <!-------------footer ends hare-------------->
+  <script src="script.js" defer></script>
+ </body>
+</html>

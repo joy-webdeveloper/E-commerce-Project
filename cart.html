@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="this is an e-commerce project for making joy express">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>My First Demo E-commerce Project | Coder Joy</title>
+   
+   <!------font awesome cdn-------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+   
+<!-------------css style link--------------->
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <!-----------navbar starts hare----------->
+   <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+      <ul class="nav_upper">
+        <li class="nav_list active">
+          <a class="nav_link" href="index.html">Home</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="register.html">Register</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="login.html">Login</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="index.html">Logout</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="profile.html">
+            <img 
+            class="profile_icon"
+            src="1000004142-removebg-preview.png" alt="profile icon">
+          </a>
+        </li>
+      </ul>
+      <ul class="nav_lower">
+        <li class="nav_list">
+          <a class="nav_link nav_brand" href="index.html">Joy Express</a>
+        </li>
+        <li class="nav_list">
+          <a class="nav_link" href="cart.html">
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span>Cart 2 Products - $124.40</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  <!-------------navbar end hare------------>
+  <main>
+    <div class="cart flex_center">
+      <div class="cart_items">
+        <div class="cart_items-heading card">
+          <h2>Shopping Cart [2 Items]</h2>
+          <div class="cart_items-action">
+            <label for="select">
+              <input type="checkbox" name="select" id="select" class="appearance-none">
+              <span class="checkbox-box"></span>
+              <span>Select all Items</span>
+            </label>
+            
+            <button class="btn btn-small">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="btn btn-light">Shop More</button>
+          </div>
+        </div>
+        
+    <div class="cart_item card flex-space-around">
+        <label class="custom-checkbox-container">
+        <input type="checkbox" name="item1" id="item1" class="appearance-none">
+        <span class="checkbox-box"></span>
+        </label>
+          <img src="images (20).jpeg" alt="product1" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">Sony Version-4 <span class="clored">Phonetool</span></h3>
+            <h4 class="product_price">Price: $225.00</h4>
+            <p class="cart_item-shipping">Free Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>1</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+         </div>
+        
+    </div>
+    
+    <div class="cart_item card flex-space-around">
+          <label class="custom-checkbox-container">
+           <input type="checkbox" name="item1" id="item1" class="appearance-none">
+           <span class="checkbox-box"></span>
+          </label>
+          <img src="big_368494.png" alt="product2" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">Apple Version-4.5 <span class="clored">Phonestand</span></h3>
+            <h4 class="product_price">Price: $325.00</h4>
+            <p class="cart_item-shipping">paid Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>2</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+          </div>
+        
+    </div>
+    
+    <div class="cart_item card flex-space-around">
+          <label class="custom-checkbox-container">
+           <input type="checkbox" name="item1" id="item1" class="appearance-none">
+           <span class="checkbox-box"></span>
+          </label>
+          <img src="images (2).jpeg" alt="product3" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">Lava Version-4.4 <span class="clored">Headphone</span></h3>
+            <h4 class="product_price">Price: $150.99</h4>
+            <p class="cart_item-shipping">paid Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>3</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+          </div>
+        
+    </div>
+    
+    <div class="cart_item card flex-space-around">
+        <label class="custom-checkbox-container">
+        <input type="checkbox" name="item1" id="item1" class="appearance-none">
+        <span class="checkbox-box"></span>
+        </label>
+          <img src="istockphoto-173906029-612x612.jpg" alt="product4" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">Samsung Version-5.5 <span class="clored">Digital Camera</span></h3>
+            <h4 class="product_price">Price: $889.99</h4>
+            <p class="cart_item-shipping">Paid Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>4</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+         </div>
+        
+    </div>
+    
+    <div class="cart_item card flex-space-around">
+          <label class="custom-checkbox-container">
+           <input type="checkbox" name="item1" id="item1" class="appearance-none">
+           <span class="checkbox-box"></span>
+          </label>
+          <img src="e356d528-bf4b-4168-ac09-42ded6a8a445.jpg" alt="product5" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">Apple Version-5.6 <span class="clored">Smart Watch</span></h3>
+            <h4 class="product_price">Price: $500.99</h4>
+            <p class="cart_item-shipping">paid Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>5</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+          </div>
+        
+    </div>
+    
+     <div class="cart_item card flex-space-around">
+          <label class="custom-checkbox-container">
+           <input type="checkbox" name="item1" id="item1" class="appearance-none">
+           <span class="checkbox-box"></span>
+          </label>
+          <img src="2066327_MzAwLTMwMC0xM2MzZjBiMjc4.webp" alt="product6" class="cart_item-img">
+          
+          <div class="cart_item-description">
+            <h3 class="product_name">NeePho Version-4.4 <span class="clored">Stand</span></h3>
+            <h4 class="product_price">Price: $700.99</h4>
+            <p class="cart_item-shipping">Free Shipping</p>
+          </div>
+          <div class="cart_item-actions">
+            <button class="btn">
+             <i class="fas fa-trash-alt"></i>
+            </button>
+            <div class="btn-more">
+             <button class="btn">
+             <i class="fas fa-add"></i>
+             </button>
+             <span>6</span>
+             <button class="btn">
+             <i class="fas fa-minus"></i>
+             </button>
+            </div>
+          </div>
+        
+    </div>
+    
+   </div>
+
+  <div class="cart_payment">
+    <div class="cart_payment-summary card">
+      <h2>Payment Summary</h2>
+      <dl class="payment-details">
+        <div class="payment-details-row">
+          <dt>Subtital</dt>
+          <dd>$349.00</dd>
+        </div>
+        <div class="payment-details-row">
+          <dt>Shipping Cost</dt>
+          <dd>$3.00</dd>
+        </div>
+        <div class="payment-details-row">
+          <dt>Total Cost</dt>
+          <dd>$351.00</dd>
+        </div>
+      </dl>
+      <button class="btn cart_payment_btn">
+          <span>Pay Now</span>
+        </button>
+    </div>
+    
+<section class="cart-payment-methods card" aria-labelledby="payment-methods-heading">
+  <h2 id="payment-methods-heading">Payment Methods</h2>
+  
+  <ul class="payment-methods-list">
+    <li class="payment-methods-list__item">
+      <a href="#" aria-label="Pay with Visa">
+        <i class="fa-brands fa-cc-visa fa-3x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="payment-methods-list__item">
+      <a href="#" aria-label="Pay with Apple Pay">
+        <i class="fa-brands fa-apple-pay fa-3x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="payment-methods-list__item">
+      <a href="#" aria-label="Pay with American Express">
+        <i class="fa-brands fa-cc-amex fa-3x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="payment-methods-list__item">
+      <a href="#" aria-label="Pay with Amazon Pay">
+        <i class="fa-brands fa-cc-amazon-pay fa-3x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="payment-methods-list__item">
+      <a href="#" aria-label="Pay with PayPal">
+        <i class="fa-brands fa-cc-paypal fa-3x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</section>
+
+     
+  </div>
+    
+  </div>
+</main>
+  <!-------------footer starts hare------------>
+    <footer class="footer">
+      <div class="flex_around">
+        <label for="subscribe">Subscribe to News Letter</label>
+      <div class="wrapper">
+        <input class="footer_input" type="email" id="subscribe" name="subscribe" placeholder="" required><label class="floating_label">Your Email Address</label>
+        <span class="input_icon"><i class="fa-solid fa-envelope"></i></span>
+       </div>
+        <button class="btn btn_subscribe">Subscribe</button>
+      </div>
+      <div>
+        <p>&copy; 2026 Joy Express. All Rights Reverse</p>
+      </div>
+     <div class="social_wrapper">
+      <div class="social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Facebook</span>
+        </a>
+      </div>
+      <div class="social">
+      <i class="fa-brands fa-youtube"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Youtube</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-github"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Github</span>
+        </a>
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-twitter"></i>
+        <a href="#" class="link_social">
+          <span class="tooltip">Twitter</span>
+        </a>
+      </div>
+    </div>
+    </footer>
+  
+  <!-------------footer end hare------------>
+  <script src="script.js" defer></script>
+ </body>
+</html>
